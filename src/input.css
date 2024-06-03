@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+.navbar {
+    @apply fixed w-full top-0 z-10 p-6 bg-gray-900 transition-shadow duration-300;
+}
+
+.navbar-shadow {
+    @apply shadow-md;
+}
+
+.nav-link {
+    @apply hover:text-teal-400;
+}
+
+.section {
+    @apply py-20;
+}
+
+.hero {
+    @apply h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800;
+}
+
+.card-img {
+    @apply mx-auto rounded-full w-32 h-32 mb-4;
+}
+
+.icon-img {
+    @apply mx-auto w-16 h-16 mb-2;
+}
+
+.form-input {
+    @apply w-full p-3 rounded bg-gray-800 border border-gray-700 text-white;
+}
+
+.form-button {
+    @apply w-full p-3 rounded bg-teal-500 hover:bg-teal-600 text-white;
+}
+
+/* Icon colors */
+.icon-html {
+    @apply text-[#E34F26];
+}
+
+.icon-css {
+    @apply text-[#1572B6];
+}
+
+.icon-js {
+    @apply text-[#F7DF1E];
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove focus outline for links and buttons */
+.nav-link:focus,
+.form-button:focus,
+a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* CSS for scroll detection */
+body.scrolled .navbar {
+    @apply shadow-md;
+}
